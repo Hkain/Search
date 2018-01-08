@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>
+    <button type="button" id="create" style="background-image:url(../../Content/Image/add.png); width:50px;height:50px;" @*onclick="location.href='@Url.Action("Create","Home")'"*@>Add</button>
+</p>
+<p>
+<input type="text" id="myInput" onkeyup="Load.timerRefresh('myInpu')" placeholder="Search for names.." title="Type in a name"/>
+</p>
+<ul id="myUL" style="list-style-type :none;padding-left:0px;width:250px">
+    @Html.Partial("_userData", (ViewBag.User as List<BusnesLogic.User>))
+</ul>
+<div id="createUser" style="width:500px;height:500px;top:211px;left:621px;position:fixed; color:aquamarine;">
+   <div id="edit"></div>
+    <div id="createDiv"></div>
+</div>
+
+    @section scripts{
+        <script src="~/Scripts/Load.js"></script>
+        <script type="text/javascript">
+            var url = '@Url.RouteUrl("userDataList")';
+            
+            $('#create').click(function () {
+                $.get("@Url.Action("ShowUserCreate", "Home")", function(data) {
+                    if (data) {
+                        var create = $('#createDiv');
+                        create.empty();
+                        $('#edit').empty();
+                        var tempDiv = $('<div id=tempDiv>');
+                        create.append(tempDiv).append(data);
+                    }
+                });
+            });
+
+            function editUser(id) {
+
+                $.get("@Url.Action("ShowUserEdit", "Home")", "id=" + id, function (data) {
+                    if (data) {
+                        var editDiv = $('#edit');
+                        editDiv.empty();
+                        $('#createDiv').empty();
+                        var tempDiv = $('<div id=editDiv>');
+                        editDiv.append(tempDiv).append(data);
+                    }
+                })
+            }
+            $(window).scroll(Load.ScrollHand);
+        </script>
+    }

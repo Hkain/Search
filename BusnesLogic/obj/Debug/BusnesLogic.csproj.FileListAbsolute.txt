@@ -1,0 +1,9 @@
+C:\Users\александр\Documents\Visual Studio 2017\Projects\ConsoleApp1\BusnesLogic\bin\Debug\BusnesLogic.dll
+C:\Users\александр\Documents\Visual Studio 2017\Projects\ConsoleApp1\BusnesLogic\bin\Debug\BusnesLogic.pdb
+C:\Users\александр\Documents\Visual Studio 2017\Projects\ConsoleApp1\BusnesLogic\bin\Debug\System.Web.Mvc.dll
+C:\Users\александр\Documents\Visual Studio 2017\Projects\ConsoleApp1\BusnesLogic\bin\Debug\System.Web.Mvc.xml
+C:\Users\александр\Documents\Visual Studio 2017\Projects\ConsoleApp1\BusnesLogic\bin\Debug\ru\System.Web.Mvc.resources.dll
+C:\Users\александр\Documents\Visual Studio 2017\Projects\ConsoleApp1\BusnesLogic\obj\Debug\BusnesLogic.csproj.CoreCompileInputs.cache
+C:\Users\александр\Documents\Visual Studio 2017\Projects\ConsoleApp1\BusnesLogic\obj\Debug\BusnesLogic.dll
+C:\Users\александр\Documents\Visual Studio 2017\Projects\ConsoleApp1\BusnesLogic\obj\Debug\BusnesLogic.pdb
+C:\Users\александр\Documents\Visual Studio 2017\Projects\ConsoleApp1\BusnesLogic\obj\Debug\BusnesLogic.csprojResolveAssemblyReference.cache
